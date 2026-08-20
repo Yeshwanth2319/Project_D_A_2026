@@ -1076,8 +1076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fe8c16ecde1cb488b0ccfcd3137ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTriggerAnimation
-  leverAnimator: {fileID: 0}
-  nearLever: 0
 --- !u!1001 &333833994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1380,8 +1378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fe8c16ecde1cb488b0ccfcd3137ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverInteraction
-  leverAnimator: {fileID: 0}
-  nearLever: 0
 --- !u!1 &387063216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,7 +1702,11 @@ MonoBehaviour:
   wall2: {fileID: 130468489}
   wall3: {fileID: 1161105018}
   wall4: {fileID: 1700268874}
-  puzzleTriggers: []
+  puzzleTriggers:
+  - {fileID: 593494180}
+  - {fileID: 545020626}
+  - {fileID: 1859217487}
+  - {fileID: 1120114097}
   loweredAmount: 4
   moveSpeed: 2
 --- !u!114 &545020632
@@ -1716,7 +1716,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545020626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82c5d13158ce7cc439dbffc6aa2b202d, type: 3}
   m_Name: 
@@ -1734,12 +1734,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17d35d0d2959904599e8f77ba731aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverTrigger
-  animator: {fileID: 545717687}
+  leverAnimator: {fileID: 545717687}
   triggerID: 2
   interactKey: 101
-  animationSpeed: 2
-  playerPushAnimation: LeverPush
-  playerIdleAnimation: Locomotion
+  animationName: Lever
+  animationSpeed: 1
 --- !u!1 &545717684 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e34783db811012448b93948b51141faf, type: 3}
@@ -1984,7 +1983,11 @@ MonoBehaviour:
   wall2: {fileID: 130468489}
   wall3: {fileID: 1161105018}
   wall4: {fileID: 1700268874}
-  puzzleTriggers: []
+  puzzleTriggers:
+  - {fileID: 593494180}
+  - {fileID: 545020626}
+  - {fileID: 1859217487}
+  - {fileID: 1120114097}
   loweredAmount: 4
   moveSpeed: 2
 --- !u!114 &593494186
@@ -1994,7 +1997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593494180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82c5d13158ce7cc439dbffc6aa2b202d, type: 3}
   m_Name: 
@@ -2012,12 +2015,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17d35d0d2959904599e8f77ba731aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverTrigger
-  animator: {fileID: 223770790}
+  leverAnimator: {fileID: 223770790}
   triggerID: 1
   interactKey: 101
-  animationSpeed: 2
-  playerPushAnimation: LeverPush
-  playerIdleAnimation: Locomotion
+  animationName: Lever
+  animationSpeed: 1
 --- !u!1001 &639743468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3710,7 +3712,11 @@ MonoBehaviour:
   wall2: {fileID: 130468489}
   wall3: {fileID: 1161105018}
   wall4: {fileID: 1700268874}
-  puzzleTriggers: []
+  puzzleTriggers:
+  - {fileID: 593494180}
+  - {fileID: 545020626}
+  - {fileID: 1859217487}
+  - {fileID: 1120114097}
   loweredAmount: 4
   moveSpeed: 2
 --- !u!65 &1120114099
@@ -3813,7 +3819,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120114097}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82c5d13158ce7cc439dbffc6aa2b202d, type: 3}
   m_Name: 
@@ -3831,12 +3837,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17d35d0d2959904599e8f77ba731aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverTrigger
-  animator: {fileID: 1888231554}
+  leverAnimator: {fileID: 1888231554}
   triggerID: 4
   interactKey: 101
-  animationSpeed: 2
-  playerPushAnimation: LeverPush
-  playerIdleAnimation: Locomotion
+  animationName: Lever
+  animationSpeed: 1
 --- !u!1 &1127696557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aaf41deb064e556439cfd5c995655def, type: 3}
@@ -6150,7 +6155,11 @@ MonoBehaviour:
   wall2: {fileID: 130468489}
   wall3: {fileID: 1161105018}
   wall4: {fileID: 1700268874}
-  puzzleTriggers: []
+  puzzleTriggers:
+  - {fileID: 593494180}
+  - {fileID: 545020626}
+  - {fileID: 1859217487}
+  - {fileID: 1120114097}
   loweredAmount: 4
   moveSpeed: 2
 --- !u!114 &1859217493
@@ -6160,7 +6169,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859217487}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82c5d13158ce7cc439dbffc6aa2b202d, type: 3}
   m_Name: 
@@ -6178,12 +6187,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17d35d0d2959904599e8f77ba731aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LeverTrigger
-  animator: {fileID: 1775289119}
+  leverAnimator: {fileID: 1775289119}
   triggerID: 3
   interactKey: 101
-  animationSpeed: 2
-  playerPushAnimation: LeverPush
-  playerIdleAnimation: Locomotion
+  animationName: Lever
+  animationSpeed: 1
 --- !u!1 &1888231551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e34783db811012448b93948b51141faf, type: 3}
@@ -6692,7 +6700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791836, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: m_Name
-      value: WaterBlock_50m
+      value: Water_
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791839, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
